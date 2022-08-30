@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "fdfba402-2f34-4059-a9f0-685f1a4961b7",
+		"name": "3Miles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Address",
+			"item": [
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/address/search?search_value=add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"address",
+								"search"
+							],
+							"query": [
+								{
+									"key": "search_value",
+									"value": "add"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000/api"
+		}
+	]
+}
